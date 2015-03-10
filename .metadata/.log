@@ -1,0 +1,159 @@
+!SESSION 2015-03-09 18:08:42.086 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=it_IT
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-03-09 18:08:53.210
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-09 18:13:36.135
+!MESSAGE NLS unused message: CacheManager_CannotLoadNonUrlLocation in: org.eclipse.equinox.internal.p2.repository.messages
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2015-03-09 18:13:36.674
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: HTTP Server 'Bad Gateway' : http://download.aptana.com/studio3/plugin/installe%2520Sites--/content.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:192)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:758)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpClient connection error response code 502.
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:254)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2015-03-09 18:13:36.683
+!MESSAGE HTTP Server 'Bad Gateway' : http://download.aptana.com/studio3/plugin/installe%2520Sites--/content.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpClient connection error response code 502.
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:254)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2015-03-09 18:13:36.683
+!MESSAGE HttpClient connection error response code 502.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-09 18:15:05.015
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-03-09 18:15:05.015
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:15:05.015
+!MESSAGE Software being installed: Eclipse Git Team Provider - Task focused interface 3.7.0.201502260915-r (org.eclipse.egit.mylyn.feature.group 3.7.0.201502260915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:15:05.015
+!MESSAGE Missing requirement: Eclipse Git Team Provider - Task focused interface 3.7.0.201502260915-r (org.eclipse.egit.mylyn.feature.group 3.7.0.201502260915-r) requires 'org.eclipse.mylyn.team_feature.feature.group 3.5.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-09 18:15:05.021
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-03-09 18:15:05.021
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:15:05.021
+!MESSAGE Software being installed: Eclipse Git Team Provider - Task focused interface 3.7.0.201502260915-r (org.eclipse.egit.mylyn.feature.group 3.7.0.201502260915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:15:05.021
+!MESSAGE Missing requirement: Eclipse Git Team Provider - Task focused interface 3.7.0.201502260915-r (org.eclipse.egit.mylyn.feature.group 3.7.0.201502260915-r) requires 'org.eclipse.mylyn.team_feature.feature.group 3.5.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-09 18:15:45.079
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-03-09 18:15:45.079
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:15:45.079
+!MESSAGE Software being installed: Eclipse Git Team Provider - Task focused interface 3.7.0.201502260915-r (org.eclipse.egit.mylyn.feature.group 3.7.0.201502260915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:15:45.079
+!MESSAGE Missing requirement: Eclipse Git Team Provider - Task focused interface 3.7.0.201502260915-r (org.eclipse.egit.mylyn.feature.group 3.7.0.201502260915-r) requires 'org.eclipse.mylyn.team_feature.feature.group 3.5.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-09 18:15:45.081
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-03-09 18:15:45.081
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:15:45.081
+!MESSAGE Software being installed: Eclipse Git Team Provider - Task focused interface 3.7.0.201502260915-r (org.eclipse.egit.mylyn.feature.group 3.7.0.201502260915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:15:45.081
+!MESSAGE Missing requirement: Eclipse Git Team Provider - Task focused interface 3.7.0.201502260915-r (org.eclipse.egit.mylyn.feature.group 3.7.0.201502260915-r) requires 'org.eclipse.mylyn.team_feature.feature.group 3.5.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2015-03-09 18:16:46.334
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: HTTP Server 'Bad Gateway' : http://download.aptana.com/studio3/plugin/installe%2520Sites--/content.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:192)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:758)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpClient connection error response code 502.
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:254)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2015-03-09 18:16:46.334
+!MESSAGE HTTP Server 'Bad Gateway' : http://download.aptana.com/studio3/plugin/installe%2520Sites--/content.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpClient connection error response code 502.
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:254)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2015-03-09 18:16:46.334
+!MESSAGE HttpClient connection error response code 502.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-09 18:17:09.041
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-03-09 18:17:09.041
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:17:09.041
+!MESSAGE Software being installed: Eclipse GitHub integration with task focused interface 3.7.0.201502260915-r (org.eclipse.mylyn.github.feature.feature.group 3.7.0.201502260915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:17:09.041
+!MESSAGE Missing requirement: Eclipse GitHub integration with task focused interface 3.7.0.201502260915-r (org.eclipse.mylyn.github.feature.feature.group 3.7.0.201502260915-r) requires 'org.eclipse.mylyn_feature.feature.group 3.7.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-09 18:17:09.042
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2015-03-09 18:17:09.042
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:17:09.042
+!MESSAGE Software being installed: Eclipse GitHub integration with task focused interface 3.7.0.201502260915-r (org.eclipse.mylyn.github.feature.feature.group 3.7.0.201502260915-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-09 18:17:09.042
+!MESSAGE Missing requirement: Eclipse GitHub integration with task focused interface 3.7.0.201502260915-r (org.eclipse.mylyn.github.feature.feature.group 3.7.0.201502260915-r) requires 'org.eclipse.mylyn_feature.feature.group 3.7.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2015-03-09 18:51:27.423
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: HTTP Server 'Bad Gateway' : http://download.aptana.com/studio3/plugin/installe%2520Sites--/content.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:192)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:758)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpClient connection error response code 502.
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:254)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2015-03-09 18:51:27.423
+!MESSAGE HTTP Server 'Bad Gateway' : http://download.aptana.com/studio3/plugin/installe%2520Sites--/content.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpClient connection error response code 502.
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:254)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2015-03-09 18:51:27.423
+!MESSAGE HttpClient connection error response code 502.
